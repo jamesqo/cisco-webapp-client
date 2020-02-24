@@ -11,5 +11,5 @@ def api_get(endpoint):
 
 @app.route('/<subreddit>')
 def subreddit(subreddit):
-    top_articles = get(f'/top/{subreddit}')
+    top_articles = api_get(f'/top/{subreddit}')
     return render_template('subreddit.html', subreddit=subreddit, articles=top_articles)
