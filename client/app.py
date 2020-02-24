@@ -12,4 +12,4 @@ def get(endpoint):
 @app.route('/<subreddit>')
 def index(subreddit):
     top_articles = get(f'/top/{subreddit}')
-    return render_template('subreddit.html', articles=top_articles)
+    return render_template('subreddit.html', subreddit=subreddit, articles=top_articles)

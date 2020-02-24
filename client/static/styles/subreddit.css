@@ -1,0 +1,19 @@
+body {
+    color: white;
+}
+
+#container {
+    background-color: red;
+}
+
+.article {
+    background-color: black;
+    border-radius: 0.25em;
+    margin: 0 auto;
+    max-width: 10em;
+    margin-top: 1em;
+}
+
+.article:first-child {
+    margin-top: initial;
+}
