@@ -1,6 +1,6 @@
 from urllib.parse import urljoin
 
-from flask import Flask
+from flask import Flask, render_template
 import requests
 
 API_ROOT = 'https://cisco-webapp-api.herokuapp.com/api/'
