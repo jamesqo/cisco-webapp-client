@@ -21,7 +21,7 @@
             <div id="content">
                 {% for article in articles %}
                 <div id="article-{{ loop.index }}" class="article">
-                    <h4>{{ article.title }}</h4>
+                    <h4><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></h4>
                     <div class="article-stats">
                         <p>{{ article.score }} Upvotes | {{ article.num_comments }} Comments</p>
                     </div>
