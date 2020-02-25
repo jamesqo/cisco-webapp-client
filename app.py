@@ -7,11 +7,10 @@ import requests
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s %(levelname)s %(message)s')
 
-API_ROOT = 'https://cisco-webapp-api.herokuapp.com/api/'
+API_ROOT = 'https://cisco-webapp-api.herokuapp.com/'
 app = Flask(__name__)
 
 def api_get(endpoint):
-    endpoint = endpoint.lstrip('/') # We don't want the "api/" part of the URL getting deleted
     url = urljoin(API_ROOT, endpoint)
     logging.debug('Making API request to %s', url)
     response = requests.get(url)
