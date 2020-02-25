@@ -10,6 +10,8 @@ This repo contains the client-side code for the web app.
 ## Instructions
 
 ```
+export FLASK_APP=app.py
+
 pip install -r requirements.txt
 flask run
 ```
