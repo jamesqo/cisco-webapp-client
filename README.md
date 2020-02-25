@@ -1,11 +1,20 @@
 # cisco-webapp-client
 
+This repo contains the client-side code for the web app.
+
+## Frameworks Used
+
+- Flask
+- Requests
+
 ## Instructions
 
 ```
 pip install -r requirements.txt
 flask run
 ```
+
+Python 3.6+ is required.
 
 ## Demonstration
 
